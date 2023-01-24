@@ -1,0 +1,16 @@
+1. Product inventory report
+ Date to Date
+ Product Code
+ Product Name
+ Stock In/Out
+ add Pagenation just like BJKB
+
+2. Store Inventory
+  Need Stock out option with person details & purpose in received voucher
+  Date to Date
+  Product Code
+  Product Name
+  Stock In/Out
+  add Pagenation just like BJKB
+
+3. 
