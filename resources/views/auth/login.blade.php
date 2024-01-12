@@ -66,7 +66,7 @@
                         <div class="card bg-pattern" style="margin-top: 5%; border-radius: 20px;">
 
                             <div class="card-body p-4">
-                                <img src="{{asset('login-assets/frontend-assets/images/dae_logo.png')}}" alt="DAE logo" width="120px;" style="display: block; margin-left:auto; margin-right: auto;" class="text-center">
+                                {{-- <img src="{{asset('login-assets/frontend-assets/images/dae_logo.png')}}" alt="DAE logo" width="120px;" style="display: block; margin-left:auto; margin-right: auto;" class="text-center"> --}}
                                 <div class="w-100 pb-2">
                                     <div class="auth-logo">
                                         <a href="" class="logo logo-dark text-center">
