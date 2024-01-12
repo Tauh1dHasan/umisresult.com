@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Frontend\FrontendController;
+
+
 use App\Http\Controllers\Backend\IndexController;
 use App\Http\Controllers\Backend\RoleController;
 use App\Http\Controllers\Backend\PermissionController;
@@ -57,7 +60,14 @@ Route::get('/link-storage', function() {
 });
 
 // ****************************************** Front-end Links *****************************************
-Route::get('/', function() {
+
+// Route::get('/', function() {
+//     return redirect()->route('login');
+// });
+
+Route::get('/', [FrontendController::class, 'index']);
+
+Route::get('/login', function() {
     return redirect()->route('login');
 });
 
