@@ -30,11 +30,11 @@
                     <div id="tab-inpt1" class="tab-content first-tab">
                         <div class="main-search-input-wrap fl-wrap">
                             <div class="main-search-input">
-                                <form action="#" method="post">
+                                <form action="{{route('searchStudentResult')}}" method="post">
                                     @csrf
                                     <div class="main-search-input-item">
                                         <label><i class="fal fa-keyboard"></i></label>
-                                        <input type="text" placeholder="Type Your ID Here" required/>
+                                        <input type="text" name="student_id"  placeholder="Type Student ID Here" required/>
                                     </div>
                                     
                                     <button type="submit" class="main-search-button color2-bg" >Search <i class="far fa-search"></i></button>

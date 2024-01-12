@@ -38,11 +38,11 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('admin.index')}}">
-                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">ড্যাশবোর্ড</span>
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboard</span>
                     </a>
                 </li>
 
-                @can('manage_role_permission')
+                {{-- @can('manage_role_permission')
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#rolePermission" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="rolePermission">
                             <i class="ri-shield-keyhole-line"></i> <span data-key="t-dashboards">ম্যানেজ ইউজার এক্সেস</span>
@@ -73,9 +73,9 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
+                @endcan --}}
 
-                @can('office_management')
+                {{-- @can('office_management')
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#office" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="office">
                             <i class="ri-building-line"></i> <span data-key="t-dashboards">অফিস ম্যানেজমেন্ট</span>
@@ -103,9 +103,9 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
+                @endcan --}}
 
-                @can('manage_location')
+                {{-- @can('manage_location')
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#location_management" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="location_management">
                             <i class="ri-map-pin-line"></i> <span data-key="t-dashboards">ম্যানেজ লোকেশন</span>
@@ -133,9 +133,9 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
+                @endcan --}}
 
-                @can('website_setting')
+                {{-- @can('website_setting')
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#website_setting" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="website_setting">
                             <i class="ri-home-line"></i> <span data-key="t-dashboards">ওয়েবসাইট সেটিংস</span>
@@ -154,7 +154,24 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
+                @endcan --}}
+
+                <li class="nav-item">
+                    <div id="website_setting">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="{{route('admin.studentResult.index')}}">
+                                    <span data-key="t-dashboards">Student Result</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="{{route('admin.studentResult.create')}}">
+                                    <span data-key="t-dashboards">Create New Result</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
             </ul>
         </div>

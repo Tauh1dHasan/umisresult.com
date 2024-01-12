@@ -22,6 +22,7 @@ use App\Http\Controllers\Backend\NotificationController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\FiscalYearController;
+use App\Http\Controllers\Backend\StudentResultController;
 
 
 /*
@@ -65,7 +66,8 @@ Route::get('/link-storage', function() {
 //     return redirect()->route('login');
 // });
 
-Route::get('/', [FrontendController::class, 'index']);
+Route::get('/', [FrontendController::class, 'index'])->name('root');
+Route::post('/search-result', [FrontendController::class, 'searchStudentResult'])->name('searchStudentResult');
 
 Route::get('/login', function() {
     return redirect()->route('login');
@@ -76,6 +78,20 @@ Auth::routes(['register' => false]);
 // ****************************************** Back-end Links *****************************************
 Route::group(['middleware' => ['AuthGates'], 'prefix' => '/admin', 'as' => 'admin.'], function() {
     Route::get('/', [IndexController::class, 'index'])->name('index');
+
+    // Student resutl routes
+
+
+    Route::group(['prefix' => 'student-result', 'as' => 'studentResult.'], function() {
+        Route::get('/', [StudentResultController::class, 'index'])->name('index');
+        Route::get('/create', [StudentResultController::class, 'create'])->name('create');
+        Route::post('/store', [StudentResultController::class, 'store'])->name('store');
+        Route::get('/show/{id}', [StudentResultController::class, 'show'])->name('show');
+        Route::get('/delete/{id}', [StudentResultController::class, 'destroy'])->name('delete');
+    });
+
+
+    // End student result routes
 
     Route::group(['prefix' => '/role', 'as' => 'role.'], function() {
         Route::get('/', [RoleController::class, 'index'])->name('index');

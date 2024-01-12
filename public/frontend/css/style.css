@@ -351,22 +351,13 @@ blockquote p {
 	left:0;
 	top:0;
 	height:80px;
-	background:#ffffff;
+	/* background:#ffffff; */
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 26%, rgba(238,66,66,1) 100%);
 	z-index:31;
 	padding:0 40px;
     -webkit-transform: translate3d(0,0,0);
 }
-.main-header:before {
-	content:'';
-	position:absolute;
-	right:0;
-	width:480px;
-	height:100%;
-	bottom:0;
-	opacity:1;
-	transition: all .3s ease-in-out;
-    background: #bbbcbc;
-}
+
 .dsh-header.main-header:before {
 	width:540px;
 }

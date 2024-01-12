@@ -35,10 +35,6 @@
 
             </div>
 
-            <div class="d-flex text-center">
-                <h5 class="text-white mt-2">কাজুবাদাম ও কফি গবেষণা, উন্নয়ন ও সম্প্রসারণ প্রকল্প <br> <span style="font-size: 0.9em;">কৃষি সম্প্রসারণ অধিদপ্তর</span>  <br> <span style="font-size: 0.8em;">কৃষি মন্ত্রণালয়</span> </h5><br>
-            </div>
-
             <div class="d-flex align-items-center">
 
                 <div class="ms-1 header-item d-none d-sm-flex">

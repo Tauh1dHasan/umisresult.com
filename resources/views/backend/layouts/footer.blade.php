@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="text-sm-end d-none d-sm-block">
-                            ডিজাইন ও ডেভেলপ: সার্ভিস ইঞ্জিন লিমিটেড
+                            
                         </div>
                     </div>
                 </div>
