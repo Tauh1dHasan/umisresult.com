@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2024 at 08:52 PM
+-- Generation Time: Jan 13, 2024 at 06:48 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dmrs`
+-- Database: `umisresult`
 --
 
 -- --------------------------------------------------------
@@ -1684,13 +1684,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `full_name`, `email`, `mobile`, `role_id`, `designation_id`, `address`, `image`, `status`, `email_verified_at`, `password`, `remember_token`, `division_id`, `district_id`, `upazila_id`, `office_id`, `horticulture_cente_id`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'Super', 'Admin', 'Super Admin', 'superadmin@gmail.com', '01234567897', 1, NULL, 'Karwanbazar', 'userImage2024_01_12_072128_14707800.jpg', 1, NULL, '$2a$12$ZCXkynIbX1ft3uJ4fE5jkOGEOhBHo9f5UTKug6mw3hRYmOhq1lFre', NULL, 5, 16, 39, NULL, NULL, 1, 1, '2022-08-25 08:33:48', '2024-01-12 13:21:28'),
-(2, 'Cumilla District', 'User', 'Cumilla District User', 'cumillauser@gmail.com', '6545647461456', 2, 1, '4545454', '1663662814.jpg', 1, NULL, '$2y$10$Xr9On3359YEI6lhhZPZxq.STgb/DY6/GXoiEA80AgeiHQFkBovfua', NULL, 7, 14, 6, 2, NULL, 1, 1, '2022-08-25 08:33:48', '2022-09-20 08:33:34'),
-(3, 'Dhaka Division', 'User', 'Dhaka Division User', 'dhakauser@gmail.com', '34234234234', 2, 1, '4545454', '1663662722.jpg', 1, NULL, '$2y$10$eQ4Tq64UYbHdyNvW99VeZuiNMe.LuBGzNZ/x8Idt8Y24WFrIMeaZy', 'bdtwvgKD4cQqRDQJCVE4QWuN5E8gG86VOCmi1ZKZijBagWvf4SZfl071zYxf', 7, 11, 6, 1, 4, 1, 1, '2022-08-25 08:37:38', '2022-09-25 12:36:36'),
-(4, 'lalmai upazil', 'user', 'lalmai upazil user', 'lalmaiuser@gmail.com', '11223344556', 3, 2, 'lalmai user address', '1663759114.png', 1, NULL, '$2y$10$CXikLB90Qp.QGfBoSFgLbO3bUmr5zg/79PWt5pvWLQlsTvvaQVzSS', NULL, 4, 11, 6, 3, NULL, 1, 1, '2022-09-20 08:38:59', '2022-09-25 13:24:21'),
-(5, 'Mukta', 'Chakma', 'Mukta Chakma', 'muktachakma@mail.com', '01533126188', 3, 6, 'Khagrachori sador', '1664260271.jpg', 1, NULL, '$2y$10$5KHfR7zcT6mFmj9EWpaJpeZ48Ax08eqUZz0yFMguR80vuCKwEtLzi', NULL, 4, 12, 16, 5, NULL, 1, NULL, '2022-09-27 06:31:12', '2022-09-27 06:31:12'),
-(6, 'Shamol', 'Sarker', 'Shamol Sarker', 'shamolsarker@mail.com', '01676743165', 4, 5, 'Hathajari, Chittagong', '1664260386.jpg', 1, NULL, '$2y$10$Omw8PVflO5lMsRuLxZ.h1.Yyb1wjpICtM1uSlIsSGAcPRqdWRKgKi', NULL, 4, 15, 34, 6, 20, 1, NULL, '2022-09-27 06:33:06', '2022-09-27 06:33:06'),
-(7, 'Jemima', 'Aguilar', 'Jemima Aguilar', 'xyri@mailinator.com', 'Dolor culpa atque e', 4, 5, 'Quis nostrum cupidit', 'userImage2022_09_27_023215_73109749.jpg', 1, NULL, '$2y$10$gr2WCiBYbpUTuRNS6gvvwOB/yljlfyZR1TBlmSisGtcDWJULiL4oK', NULL, 4, 11, 6, 1, NULL, 1, NULL, '2022-09-27 08:32:15', '2022-09-27 08:32:15');
+(1, 'Super', 'Admin', 'Super Admin', 'admin@mail.com', '01234567897', 1, NULL, 'Karwanbazar', 'userImage2024_01_12_072128_14707800.jpg', 1, NULL, '$2a$12$ZCXkynIbX1ft3uJ4fE5jkOGEOhBHo9f5UTKug6mw3hRYmOhq1lFre', NULL, 5, 16, 39, NULL, NULL, 1, 1, '2022-08-25 08:33:48', '2024-01-12 13:21:28');
 
 -- --------------------------------------------------------
 
@@ -1709,13 +1703,6 @@ CREATE TABLE `villages` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `villages`
---
-
-INSERT INTO `villages` (`id`, `name`, `block_id`, `sl`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(4, 'Village One', NULL, NULL, 1, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
